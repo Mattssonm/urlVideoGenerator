@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UrlVideo</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="assets/main.js"></script>
+    <script src="assets/generateUrl.js"></script>
+  </head>
+  <body>
+    <br>
+    <h1 class="center">Url Generator</h1>
+    <div class="formWrapper">
+      <div class="container-fluid">
+        <p>Fill fields below to generate url</p>
+        <div class="form-group">
+          <label for="yourUrl">Your base url</label>
+          <input class="form-control" id="yourUrl" type="text" name="yourUrl" value="https://dothingsyourway.com/resources/">
+        </div>
+        <div class="form-group">
+          <label for="video">Video</label>
+          <input class="form-control" id="video" type="text" name="video" value="">
+        </div>
+        <div class="form-group">
+          <label for="heading">Heading</label>
+          <input class="form-control" id="heading" type="text" name="heading" value="">
+        </div>
+        <div class="form-group">
+          <label for="tracking">Tracking</label>
+          <input class="form-control" id="tracking" type="text" name="tracking" value="">
+        </div>
+        <div class="form-group">
+          <label for="sfmAssetVideo">SFM Asset Video?</label>
+          <input type="radio" name="sfmAssetVideo" value="true" checked>
+          <label class="form-check-label" for="sfmAssetVideo">Yes</label>
+          <input type="radio" name="sfmAssetVideo" value="false">
+          <label class="form-check-label" for="sfmAssetVideo">No</label>
+        </div>
+        <input class="btn btn-primary" id="generateBtn" type="button" name="Generate" value="Generate">
+      </div>
+    </div>
+    <div id="postUrlDiv" class="alert">
+      <p class="center" id="postUrl"></p>
+    </div>
+  </body>
+</html>

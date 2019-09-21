@@ -1,0 +1,18 @@
+body {
+  background-color: gray;
+}
+
+.center {
+  text-align: center;
+}
+
+.formWrapper {
+  background-color: white;
+  max-width: 500px;
+  margin: 50px auto 0px auto;
+}
+
+#postUrlDiv{
+  margin: 20px auto;
+  max-width: 800px;
+}
