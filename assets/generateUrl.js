@@ -17,6 +17,7 @@ window.addEventListener("load", () => {
     }
 
     document.getElementById("postUrl").innerHTML = yourUrl + "?video=" + video + "&?heading=" + heading + "&?t=" + tracking + "&?sfm=" + sfmAssetVideo
+    document.getElementById("postUrl").setAttribute("href", yourUrl + "?video=" + video + "&?heading=" + heading + "&?t=" + tracking + "&?sfm=" + sfmAssetVideo);
     document.getElementById("postUrlDiv").classList.add("alert-success");
   });
 
