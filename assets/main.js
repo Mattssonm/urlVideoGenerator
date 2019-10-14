@@ -15,18 +15,24 @@ window.addEventListener("load", () => {
 	}
 
 	//Example https://dothingsyourway.com/recources/?video=https://www.youtube.com/embed/5tJW01BqFtI?feature=oembed&?heading=How%20to%20start%20an%20online%20business&?t=testingtrackingmfs&?sfm=false
-	let headingText = getParameterByName("heading");
+	//get parameters
+	let heading = getParameterByName("heading");
 	let tracking = getParameterByName("t");
 	let videoUrl = getParameterByName("video");
 	let sfm = getParameterByName("sfm");
+
+	//get Id's from page
   let embeddedVideo = document.getElementById("embeddedVideo");
   let sfmVideo = document.getElementById("sfm-video");
+	let headingText =	document.getElementById("headingText")
+	let ctaBtn = document.getElementById("ctaBtn")
 
-	document.getElementById("headingText").innerHTML = headingText;
+	//set heading text
+ 	headingText.innerHTML = heading;
 
 	if ( tracking != null ) {
-		let urlBefore = document.getElementById("ctaBtn").getAttribute("href");
-		document.getElementById("ctaBtn").setAttribute("href", urlBefore + tracking);
+		let urlBefore = ctaBtn.getAttribute("href");
+		ctaBtn.setAttribute("href", urlBefore + tracking);
 	};
 
   if ( sfm == "true" ) {
